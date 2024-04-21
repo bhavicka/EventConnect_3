@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        main {
+            margin: 40px;
+            padding: 30px;
+        }
+
+        li,
+        p {
+            font-size: 30px;
+        }
+
+        img {
+            margin: 20px 20px 0px 0px;
+            padding: 20px 20px 0px 0px;
+        }
+
+        .contact-us a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .contact-us a:hover {
+            color: rgb(0, 255, 17)
+        }
+
+        .review {
+            display: flex;
+            /* Arrange stars horizontally */
+            width: fit-content;
+            /* Adjust width as needed */
+        }
+
+        .review label {
+            font-size: 2rem;
+            /* Adjust star size */
+            cursor: pointer;
+            color: #ccc;
+            /* Unselected star color */
+            transition: color 0.3s ease;
+            /* Add hover effect */
+        }
+
+        .review label:hover {
+            color: gold;
+            /* Hover color for stars */
+        }
+
+        .review input[type="radio"]:checked~label {
+            color: gold;
+            /* Selected star color */
+        }
+
+        .review label {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="font-size: 60px;">Welcome to EventConnect</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="regOrganizer.html">Register An Event</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="about-us">
+            <h2 style="font-size: 50px;">About Us - Your Trusted Event Management Partner</h2>
+            <p>Welcome to the About Us page of EventConnect! We're a passionate team dedicated to empowering individuals
+                and organizations to create unforgettable events.</p>
+            <br>
+            <h3>Our Mission</h3>
+            <ul type="square">
+                <li>To simplify the event planning process with a user-friendly and comprehensive event management
+                    system.</li>
+                <li>To provide innovative tools and features that streamline event creation, management, and execution.
+                </li>
+                <li>To empower event organizers of all experience levels to host successful and impactful events.</li>
+            </ul><br>
+
+            <h3>Our Values</h3>
+            <ul type="square">
+                <li><b>Innovation:</b> We're constantly striving to develop new features and functionalities that stay
+                    ahead of the curve in event management technology.</li>
+                <li><b>Customer Focus:</b> We prioritize user experience and offer exceptional support to ensure your
+                    success with our platform.</li>
+                <li><b>Collaboration:</b> We believe in fostering connections and building partnerships within the event
+                    planning community.</li>
+            </ul><br>
+
+            <h3>Why Choose Us?</h3>
+            <ul type="square">
+                <li><b>All-in-One Solution:</b>All-in-One Solution: Manage every aspect of your event, from registration
+                    and ticketing to attendee engagement and analytics, all within one centralized platform.</li>
+                <li><b>Scalability:</b> Our system caters to events of all sizes, from small gatherings to large-scale
+                    conferences and festivals.</li>
+                <li><b>Customization: </b> Personalize your event experience with customizable branding, registration
+                    forms, and event workflows.</li>
+                <li><b>Powerful Tools:</b> Leverage our suite of features for tasks like creating event websites,
+                    managing guest lists, sending automated emails, and generating detailed reports.</li>
+                <li><b>Security and Reliability:</b> We prioritize data security and ensure reliable platform
+                    performance to give you peace of mind.</li>
+            </ul><br>
+
+            <h3>Our Team</h3>
+            <p>EventConnect is backed by a team of experienced professionals with extensive knowledge in event
+                management technology, software development, and customer service. We're passionate about events and
+                dedicated to providing you with the tools and support you need to create memorable experiences.</p>
+            <br>
+            <h3>Join the Community!</h3>
+            <p>We invite you to explore our platform and discover how EventConnect can
+                revolutionize your event management experience. Stay connected with us by subscribing to our newsletter
+                and following us on social media for industry insights, event planning tips, and the latest platform
+                updates.</p>
+            <p>Let's make your next event a resounding success!</p>
+        </div><br>
+        <div class="details">
+            <div class="contact-us">
+                Call us: <a href="">+91 99999 8888</a><br>
+                Mail us: <a href="">abc123@gmail.com</a><br>
+                Write to us: <a href="">Sarkhej - Gandhinagar Hwy, Gota, Ahmedabad, Gujarat 382481</a>
+            </div><br>
+            <p>RATE US:</p>
+            <div class="review">
+            
+                <label id="s1" for="star-1" title="5 stars" onclick="oneStar()">★</label>
+                <label id="s2" for="star-2" title="4 stars" onclick="twoStar()">★</label>
+                <label id="s3" for="star-3" title="3 stars" onclick="threeStar()">★</label>
+                <label id="s4" for="star-4" title="2 stars" onclick="fourStar()">★</label>
+                <label id="s5" for="star-5" title="1 star" onclick="fiveStar()">★</label>
+    
+                <input type="radio" id="star-1" name="rating" value="5" hidden>
+                <input type="radio" id="star-2" name="rating" value="4" hidden>
+                <input type="radio" id="star-3" name="rating" value="3" hidden>
+                <input type="radio" id="star-4" name="rating" value="2" hidden>
+                <input type="radio" id="star-5" name="rating" value="1" hidden>
+            </div>
+            <div class="socials">
+                <a href="https://www.instagram.com"><img src="ig_icon.png" alt="instagram"></a>
+                <a href="https://www.facebook.com"><img src="fb_icon.png" alt="facebook"></a>
+                <a href="https://www.twitter.com"><img src="x_icon.png" alt="twitter"></a>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 EventConnect. All rights reserved.</p>
+    </footer>
+    <script>
+        function oneStar() {
+            const l1 = document.getElementById("s1");
+            const l2 = document.getElementById("s2");
+            const l3 = document.getElementById("s3");
+            const l4 = document.getElementById("s4");
+            const l5 = document.getElementById("s5");
+
+            l1.style.color = "gold";
+
+            l2.style.color = "gray";
+            l3.style.color = "gray";
+            l4.style.color = "gray";
+            l5.style.color = "gray";
+        }
+        function twoStar() {
+            const l1 = document.getElementById("s1");
+            const l2 = document.getElementById("s2");
+            const l3 = document.getElementById("s3");
+            const l4 = document.getElementById("s4");
+            const l5 = document.getElementById("s5");
+
+            l1.style.color = "gold";
+            l2.style.color = "gold";
+
+            l3.style.color = "gray";
+            l4.style.color = "gray";
+            l5.style.color = "gray";
+        }
+        function threeStar() {
+            const l1 = document.getElementById("s1");
+            const l2 = document.getElementById("s2");
+            const l3 = document.getElementById("s3");
+            const l4 = document.getElementById("s4");
+            const l5 = document.getElementById("s5");
+
+            l1.style.color = "gold";
+            l2.style.color = "gold";
+            l3.style.color = "gold";
+
+            l4.style.color = "gray";
+            l5.style.color = "gray";
+        }
+
+        function fourStar() {
+            const l1 = document.getElementById("s1");
+            const l2 = document.getElementById("s2");
+            const l3 = document.getElementById("s3");
+            const l4 = document.getElementById("s4");
+            const l5 = document.getElementById("s5");
+
+            l1.style.color = "gold";
+            l2.style.color = "gold";
+            l3.style.color = "gold";
+            l4.style.color = "gold";
+
+            l5.style.color = "gray";
+        }
+        function fiveStar() {
+            const l1 = document.getElementById("s1");
+            const l2 = document.getElementById("s2");
+            const l3 = document.getElementById("s3");
+            const l4 = document.getElementById("s4");
+            const l5 = document.getElementById("s5");
+
+            l1.style.color = "gold";
+            l2.style.color = "gold";
+            l3.style.color = "gold";
+            l4.style.color = "gold";
+            l5.style.color = "gold";
+        } 
+    </script>
+</body>
+
+</html>

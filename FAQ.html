@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventConnect - FAQ</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .faq-answer p {
+            margin: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to EventConnect</h1>
+        <nav>
+            <ul>
+                <li><a href="trial.html">Home</a></li>
+                <li><a href="">Events</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="regOrganizer.html">Register An Event</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">How do I create an event?</div>
+            <div class="faq-answer">
+                <p>To create an event, navigate to the "Events" section and click on the "Create Event" button. Follow the prompts to fill in the event details, such as the title, date, location, and description.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">Can I edit my event after it's been created?</div>
+            <div class="faq-answer">
+                <p>Yes, you can edit your event details by visiting the "My Events" section and selecting the event you wish to edit. From there, you can make changes to the event information and save your updates.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">How do I purchase tickets for an event?</div>
+            <div class="faq-answer">
+                <p>To purchase tickets for an event, navigate to the event page and click on the "Buy Tickets" button. Follow the instructions to select the desired number of tickets and complete the checkout process.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">Is there a refund policy for purchased tickets?</div>
+            <div class="faq-answer">
+                <p>Refund policies vary depending on the event organizer. Some events may offer refunds for tickets purchased within a certain timeframe, while others may have a strict no-refund policy. Please refer to the event page or contact the organizer for more information.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">How can I contact customer support?</div>
+            <div class="faq-answer">
+                <p>If you have any questions or need assistance, you can contact our customer support team by emailing support@mihirvyas6487@gmail.com or calling 9359215647. Our team is available to help you with any inquiries or issues you may have.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer style="margin-top: 7%;">
+        <p>&copy; 2024 EventConnect. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleAnswer(question) {
+            var answer = question.nextElementSibling;
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
